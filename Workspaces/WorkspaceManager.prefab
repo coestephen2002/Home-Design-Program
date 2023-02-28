@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8401193290643296495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8401193290643296494}
+  - component: {fileID: 8401193290643296489}
+  m_Layer: 0
+  m_Name: WorkspaceManager
+  m_TagString: WorkspaceManager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8401193290643296494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8401193290643296495}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.14737116}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8401193290643296489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8401193290643296495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54b72fc6f1cf2734f8c155be5132ab8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  workspace: {fileID: 3678301879485489249, guid: 951d9e265c4543d428e7e31f3dc44daf, type: 3}
+  workspaces: []
+  buttons: []
+  name: 
+  currentWorkspace: {fileID: 0}
+  workspaceButton: {fileID: 4884992358292900587, guid: 70f3120c4ac7a7a4b9f6cb267f0a47c6, type: 3}
+  buttonHolder: {fileID: 0}
+  floor: {fileID: 0}
+  floorList: {fileID: 0}
+  floorListList: []
+  ExampleUI: {fileID: 0}
+  currentFloorList: {fileID: 0}
+  workspaceCount: 0

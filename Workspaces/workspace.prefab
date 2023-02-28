@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3678301879485489249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 684358080661252513}
+  - component: {fileID: 2931859623326365048}
+  - component: {fileID: -8814900538199804214}
+  m_Layer: 0
+  m_Name: workspace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &684358080661252513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678301879485489249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2931859623326365048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678301879485489249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39b70150319020478f0fab4e9cd1bd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  width: 0
+  height: 0
+  floors: []
+  FloorCount: 0
+  floorButton: {fileID: 9122054291837889618, guid: 0c6b6649989d89a47974350f92c2f229, type: 3}
+  currentFloor: {fileID: 0}
+  floor: {fileID: 2678628493740887051, guid: 95df9f6f11692bc469632dadaf81ba93, type: 3}
+  floorButtons: []
+--- !u!114 &-8814900538199804214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678301879485489249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ba2843c9772c74ebcd978501b4b48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floorList: {fileID: 1658206061965504947, guid: 2f8f6982afb3d8c4e9fb7b7745187778, type: 3}
+  floorListParent: {fileID: 6324806916209839039, guid: 16fe22e2631f6c6458a78143009a5d7b, type: 3}

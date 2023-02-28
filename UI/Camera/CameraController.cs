@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 public class CameraController : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,8 +16,11 @@ public class CameraController : MonoBehaviour
     public GameObject topRight;
     Vector3 bottomLeftPos;
     Vector3 topRightPos;
+    Vector3 oldPos;
     public Slider length;
     public Slider width;
+    public bool isDraggable = true;
+    public bool moved;
     // Update is called once per frame
      public void getPos() {
         bottomLeftPos = camera.WorldToScreenPoint(bottomLeft.transform.position);
@@ -29,7 +33,7 @@ public class CameraController : MonoBehaviour
 
     void Update()
    {
-    if(Input.mousePosition.x > bottomLeftPos.x && Input.mousePosition.x < topRightPos.x && Input.mousePosition.y > bottomLeftPos.y && Input.mousePosition.y < topRightPos.y )
+    if(Input.mousePosition.x > bottomLeftPos.x && Input.mousePosition.x < topRightPos.x && Input.mousePosition.y > bottomLeftPos.y && Input.mousePosition.y < topRightPos.y && EventSystem.current.IsPointerOverGameObject() == false)
     {
     Zoom(Input.GetAxis("Mouse ScrollWheel"));
     Drag();
@@ -38,6 +42,11 @@ public class CameraController : MonoBehaviour
 
     private void Drag()
     {
+        if(isDraggable == true)
+        {
+        if(Input.GetMouseButtonDown(0)) {
+            oldPos = Camera.main.transform.position;
+        }
         if(Input.GetMouseButton(0))
         {
             Difference = (Camera.main.ScreenToWorldPoint(Input.mousePosition)) - Camera.main.transform.position;
@@ -53,7 +62,14 @@ public class CameraController : MonoBehaviour
         }
         if(drag)
         {
+            //Vector3 oldPos = Camera.main.transform.position;
             Camera.main.transform.position = Origin - Difference;
+
+            if(Mathf.Abs(Camera.main.transform.position.x - oldPos.x) > 0.10f || Mathf.Abs(Camera.main.transform.position.y - oldPos.y) > 0.10f) {
+                moved = true;
+            }
+            
+        }
         }
         
     }
