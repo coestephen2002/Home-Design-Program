@@ -39,9 +39,7 @@ public class FurnitureState : MonoBehaviour
         parent = gameObject.transform.parent.gameObject;
         workspace = parent.transform.parent.gameObject;
         gridWidth = workspace.GetComponent<workspaceInfo>().width;
-        Debug.Log(gridWidth);
         gridHeight = workspace.GetComponent<workspaceInfo>().height;
-        Debug.Log(gridHeight);
         isFirstCreated = true;
         furnitureWidth = gameObject.transform.localScale.x;
         furnitureHeight = gameObject.transform.localScale.y;

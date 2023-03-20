@@ -8,7 +8,7 @@ public class Tile : MonoBehaviour
    [SerializeField] public Color normalColor;
    [SerializeField] public Color offsetColor;
    [SerializeField] public Color tileColor;
-   [SerializeField] public SpriteRenderer renderer;
+   [SerializeField] new public SpriteRenderer renderer;
    [SerializeField] public bool isOccupied = false;
    public void init(bool isOffset)
    {

@@ -6,20 +6,18 @@ using TMPro;
 public class toggleSizeChoice : MonoBehaviour
 {
     [SerializeField]
-    GameObject gameObject;
+    new GameObject gameObject;
     [SerializeField]
     TMP_Text statusText;
     [SerializeField]
-    bool enabled;
+    new bool enabled;
     GameObject[] buttonsBelow;
     GameObject wallBank;
-    GameObject furnitureBank;
     [SerializeField]
     GameObject content;
     float childColumns;
    IEnumerator Start()
    {
-    bool enabled = true;
     setState();
     yield return new WaitForSeconds(0.5f);
     GameObject.FindGameObjectWithTag("Categories").GetComponent<VerticalLayoutGroup>().enabled = false;

@@ -8,7 +8,7 @@ public class Grid : MonoBehaviour
    public Slider heightSlide;
    public Slider widthSlide;
     [SerializeField] Transform cam;
-    [SerializeField] Camera camera;
+    [SerializeField] new Camera camera;
     [SerializeField] Tile tilePrefab;
 
     private Vector3 startPos;

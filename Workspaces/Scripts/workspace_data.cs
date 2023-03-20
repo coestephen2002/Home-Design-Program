@@ -9,13 +9,12 @@ public class workspace_data : MonoBehaviour
     public GameObject workspace;
     public List<GameObject> workspaces;
     public List<GameObject> buttons;
-    public string name;
+    new public string name;
     public GameObject currentWorkspace;
     [SerializeField]
     public GameObject workspaceButton;
     [SerializeField]
     public GameObject buttonHolder;
-    public GameObject floor;
     public GameObject floorList;
     public List<GameObject> floorListList;
     public GameObject ExampleUI;
@@ -53,7 +52,6 @@ public class workspace_data : MonoBehaviour
        currentWorkspace = created;
        created.GetComponent<workspaceInfo>().width =  GameObject.FindWithTag("GridManager").GetComponent<GridCreation>().width;
        created.GetComponent<workspaceInfo>().height= GameObject.FindWithTag("GridManager").GetComponent<GridCreation>().height;
-    //    created.GetComponent<workspaceFloors>().instantiateFloorList();
 
        GameObject newbutton = Instantiate(workspaceButton);
        newbutton.transform.SetParent(buttonHolder.transform);

@@ -92,7 +92,7 @@ public class FurnitureMovement : MonoBehaviour {
                     else{
                         Deselect();
                     }
-                    Debug.Log("entered 1");
+                    // Debug.Log("entered 1");
                     
                 }
                 

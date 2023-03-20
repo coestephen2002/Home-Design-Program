@@ -38,14 +38,14 @@ public class TileManager : MonoBehaviour
         }
 
         
-        Debug.Log("-------------------------------------");
-        string res = "\n";
-        for(int i = occupied.GetLength(1) - 1; i >= 0; i--) {
-            for(int j = 0; j < occupied.GetLength(0); j++) {
-                res = res + occupied[j,i];
-            }
-            Debug.Log(res);
-            res = "\n";
-        } 
+        // Debug.Log("-------------------------------------");
+        // string res = "\n";
+        // for(int i = occupied.GetLength(1) - 1; i >= 0; i--) {
+        //     for(int j = 0; j < occupied.GetLength(0); j++) {
+        //         res = res + occupied[j,i];
+        //     }
+        //     Debug.Log(res);
+        //     res = "\n";
+        // } 
     }
 }
